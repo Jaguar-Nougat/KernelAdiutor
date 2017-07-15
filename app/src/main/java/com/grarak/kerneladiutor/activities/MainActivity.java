@@ -81,8 +81,8 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Don't initialize analytics with debug build
-        if (!BuildConfig.DEBUG) {
+        // Don't initialize analytics with donate build
+        if (!BuildConfig.DONATE) {
             Fabric.with(this, new Crashlytics());
         }
 
