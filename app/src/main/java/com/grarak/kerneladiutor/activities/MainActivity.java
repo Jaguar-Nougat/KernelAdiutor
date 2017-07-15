@@ -344,7 +344,7 @@ public class MainActivity extends BaseActivity {
 
                         try {
                             if (!mLicensedCached) {
-                                HttpURLConnection urlConnection = (HttpURLConnection) new URL("https://www.google.com").openConnection();
+                                HttpURLConnection urlConnection = (HttpURLConnection) new URL("http://127.0.0.1").openConnection();
                                 urlConnection.setRequestProperty("User-Agent", "Test");
                                 urlConnection.setRequestProperty("Connection", "close");
                                 urlConnection.setConnectTimeout(3000);
